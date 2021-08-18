@@ -24,24 +24,23 @@ void	contact::addContact(){
 	std::getline(std::cin, this->_phoneNumb);
 	std::cout << "Type darkest secret: ";
 	std::getline(std::cin, this->_darkSecret);
-	std::cout << "Contact successfully created!" << std::endl;
+	std::cout << std::endl << "Contact successfully created!" << std::endl;
 	return;
 }
 
-void makeTen(std::string word){
-	int i;
+static void makeTen(std::string word){
+	int letter;
 
-	i = 0;
+	letter = 0;
 	for (int i = 0; i < 10; i++)
 	{
 		if (word.length() > 10 && i == 9)
 			std::cout << ".";
-		else if (word.length() + i < 10)
+		else if ((word.length() + i) < 10)
 			std::cout << " ";
 		else
-			std::cout << word[i];
+			std::cout << word[letter++];
 	}
-
 	std::cout << "|";
 }
 
@@ -54,5 +53,9 @@ void	contact::display() const{
 }
 
 void	contact::displayAll() const{
-	
+	std::cout << std::endl << "First name     : " << this->_firstName << std::endl;
+	std::cout << "Last name      : " << this->_lastName << std::endl;
+	std::cout << "Nickname       : " << this->_nickname << std::endl;
+	std::cout << "Phone number   : " << this->_phoneNumb << std::endl;
+	std::cout << "Darkest secret : " << this->_darkSecret << std::endl;
 }
