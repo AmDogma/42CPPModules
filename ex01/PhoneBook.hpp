@@ -11,11 +11,11 @@ public:
 	phoneBook();
 	~phoneBook();
 
-	contact	contact[8];
 	int		curr;
-
 	void	act();
+
 private:
+	contact	contact[8];
 };
 
 #endif

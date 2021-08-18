@@ -20,7 +20,7 @@ void phoneBook::act() {
 	while (std::getline(std::cin, data))
 	{
 		std::cout << std::endl;
-		if (data == "ADD")
+		if (data == "ADD"  || data == "add")
 		{
 			contact[curr].addContact();
 			if (curr == 7)
@@ -28,7 +28,7 @@ void phoneBook::act() {
 			else
 				curr++;
 		}
-		else if (data == "SEARCH")
+		else if (data == "SEARCH" || data == "search")
 		{
 			std::cout << "                  PhoneBook" << std::endl;
 			std::cout << "|     Index|First name| Last name|  Nickname|" << std::endl;
@@ -38,16 +38,16 @@ void phoneBook::act() {
 				contact[index].display();
 			}
 			std::cout << "|__________|__________|__________|__________|" << std::endl;
-			std::cout << std::endl << "Type index for more details (from 1 to 8):";
+			std::cout << std::endl << "Type index for more details (from 1 to 8): ";
 			std::getline(std::cin, data);
 			if (data[0] > '0' && data[0] < '9' && data[1] == '\0') {
 				num = std::stoi(data);
 				contact[num - 1].displayAll();
 			}
 			else
-				std::cout << std::endl << "Error: Wrong parameter. Try to SEARCH again. " << std::endl;
+				std::cout << std::endl << "Error: Wrong parameter. Try to SEARCH again." << std::endl;
 		}	
-		else if (data == "EXIT") {
+		else if (data == "EXIT" || data == "exit") {
 			std::cout << "               PhoneBook  2021" << std::endl;
 			std::cout << "                  Thanks!" << std::endl;
 			return;
