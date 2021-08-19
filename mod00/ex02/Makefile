@@ -1,9 +1,9 @@
-NAME = main
+NAME = account
 CC = clang++
 
 CFLAGS = -Wall -Werror -Wextra
 
-SRCS =	main.cpp Contact.cpp PhoneBook.cpp
+SRCS =	tests.cpp Account.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
@@ -11,7 +11,7 @@ $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
 
 $(OBJS): %.o: %.cpp
-	$(CC) $(CFLAGS) -c $< -o $@	
+	$(CC) $(CFLAGS) -c $< -o $@
 
 all: $(NAME)
 
