@@ -1,9 +1,9 @@
-NAME = megaphone
+NAME = zombieHorde
 CC = clang++
 
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 
-SRCS =	megaphone.cpp
+SRCS =	Zombie.cpp main.cpp ZombieHorde.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 
