@@ -1,7 +1,7 @@
 #include "Weapon.hpp"
 #include "HumanB.hpp"
 
-HumanB::HumanB( std::string name) : _HumanName(name) {}
+HumanB::HumanB( std::string name) : _HumanName(name), _WeaponHumanB(NULL) {}
 
 void HumanB::attack(){
 	std::cout << _HumanName << " attacks with his " << _WeaponHumanB->getType() << std::endl;

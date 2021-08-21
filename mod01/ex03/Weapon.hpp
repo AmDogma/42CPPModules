@@ -2,8 +2,6 @@
 #define WEAPON_HPP
 #include <iostream>
 
-
-
 class	Weapon
 {
 	public:
