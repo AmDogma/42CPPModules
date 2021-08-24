@@ -14,7 +14,7 @@ public:
 	Fixed &	operator = (Fixed &other);
 
 private:
-	int					point;
-	static const int	value = 12345678;
+	int					value;
+	static const int	fixed = 8;
 
 };
