@@ -15,13 +15,16 @@ public:
 	float	toFloat ( void ) const;
 	int		getRawBits ( void ) const;
 	void	setRawBits ( int const raw );
-	// static Fixed &	max ( Fixed &a, Fixed &b);
-	static Fixed const & max ( Fixed const &a, Fixed const &b);
 	
-	Fixed &	operator ++ (void);
+	static Fixed &	max ( Fixed &a, Fixed &b);
+	static Fixed &	min ( Fixed &a, Fixed &b);
+	static Fixed const & max ( Fixed const &a, Fixed const &b);
+	static Fixed const & min ( Fixed const &a, Fixed const &b);
+	
+	Fixed	operator -- (int);
 	Fixed	operator ++ (int);
 	Fixed &	operator -- (void);
-	Fixed	operator -- (int);
+	Fixed &	operator ++ (void);
 	Fixed &	operator = (Fixed const &other);
 	Fixed	operator + (Fixed const &other) const;
 	Fixed	operator - (Fixed const &other) const;
@@ -33,7 +36,6 @@ public:
 	bool	operator == (Fixed const &other) const;
 	bool	operator >= (Fixed const &other) const;
 	bool	operator <= (Fixed const &other) const;
-
 
 private:
 	int					value;
