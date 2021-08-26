@@ -2,7 +2,7 @@ NAME = fourth
 CC = clang++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -Wshadow -Wno-shadow
 
-FILES = main.cpp ClapTrap.cpp FragTrap.cpp DiamondTrap.cpp
+FILES = main.cpp ClapTrap.cpp FragTrap.cpp DiamondTrap.cpp ScavTrap.cpp
 
 SRCS = $(FILES)
 

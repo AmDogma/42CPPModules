@@ -2,7 +2,7 @@ NAME = third
 CC = clang++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
-FILES = main.cpp ClapTrap.cpp FragTrap.cpp
+FILES = main.cpp ClapTrap.cpp FragTrap.cpp ScavTrap.cpp
 
 SRCS = $(FILES)
 

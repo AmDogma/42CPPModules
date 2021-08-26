@@ -6,14 +6,16 @@ ScavTrap::ScavTrap() : ClapTrap() {
 	hitPoints = 100;
 	energyPoints = 50;
 	attackDamage = 20;
+	energyPointsScav = 50;
 }
 
 ScavTrap::ScavTrap(std::string addName) : ClapTrap(addName) {
-	std::cout << this << "\tConstructor ScavTrap" << std::endl;
+	std::cout << this << "\tConstructor for ScavTrap" << std::endl;
 	name = addName;
 	hitPoints = 100;
 	energyPoints = 50;
 	attackDamage = 20;
+	energyPointsScav = 50;
 }
 
 ScavTrap::ScavTrap(ScavTrap &other) {
@@ -21,6 +23,7 @@ ScavTrap::ScavTrap(ScavTrap &other) {
 	hitPoints = other.hitPoints;
 	energyPoints = other.energyPoints;
 	attackDamage = other.attackDamage;
+	energyPointsScav = other.energyPointsScav;
 }
 
 ScavTrap::~ScavTrap() {
@@ -32,6 +35,7 @@ ScavTrap & ScavTrap::operator = (ScavTrap const &other) {
 	hitPoints = other.hitPoints;
 	energyPoints = other.energyPoints;
 	attackDamage = other.attackDamage;
+	energyPointsScav = other.energyPointsScav;
 	return *this;
 }
 

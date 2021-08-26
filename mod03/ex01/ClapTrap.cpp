@@ -50,10 +50,10 @@ unsigned int ClapTrap::getHitPoints() {
 	return hitPoints;
 }
 
-unsigned int ClapTrap::setEnergy() {
+unsigned int ClapTrap::getEnergy() {
 	return energyPoints;
 }
-unsigned int ClapTrap::setDamage() {
+unsigned int ClapTrap::getDamage() {
 	return attackDamage;
 }
 

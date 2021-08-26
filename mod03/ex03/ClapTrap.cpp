@@ -4,7 +4,7 @@ ClapTrap::ClapTrap() : name("some"), hitPoints(10), energyPoints(10), attackDama
 	std::cout << this << "\tDefault constructor for ClapTrap" << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string const name) : name(name), hitPoints(10), energyPoints(10), attackDamage(0) {
+ClapTrap::ClapTrap(std::string const addName) : name(addName), hitPoints(10), energyPoints(10), attackDamage(0) {
 	std::cout << this << "\tConstructor for ClapTrap" << std::endl;
 }
 
@@ -50,10 +50,10 @@ unsigned int ClapTrap::getHitPoints() {
 	return hitPoints;
 }
 
-unsigned int ClapTrap::setEnergy() {
+unsigned int ClapTrap::getEnergy() {
 	return energyPoints;
 }
-unsigned int ClapTrap::setDamage() {
+unsigned int ClapTrap::getDamage() {
 	return attackDamage;
 }
 

@@ -6,14 +6,18 @@ FragTrap::FragTrap() : ClapTrap() {
 	hitPoints = 100;
 	energyPoints = 100;
 	attackDamage = 30;
+	hitPointsFrag = 100;
+	attackDamageFrag = 30;
 }
 
 FragTrap::FragTrap(std::string addName) : ClapTrap(addName) {
-	std::cout << this << "\tConstructor FragTrap" << std::endl;
+	std::cout << this << "\tConstructor for FragTrap" << std::endl;
 	name = addName;
 	hitPoints = 100;
 	energyPoints = 100;
 	attackDamage = 30;
+	hitPointsFrag = 100;
+	attackDamageFrag = 30;
 }
 
 FragTrap::FragTrap(FragTrap &other) {
@@ -21,6 +25,8 @@ FragTrap::FragTrap(FragTrap &other) {
 	hitPoints = other.hitPoints;
 	energyPoints = other.energyPoints;
 	attackDamage = other.attackDamage;
+	hitPointsFrag = other.hitPointsFrag;
+	attackDamageFrag = other.attackDamageFrag;
 }
 
 FragTrap::~FragTrap() {
@@ -32,6 +38,8 @@ FragTrap & FragTrap::operator = (FragTrap const &other) {
 	hitPoints = other.hitPoints;
 	energyPoints = other.energyPoints;
 	attackDamage = other.attackDamage;
+	hitPointsFrag = other.hitPointsFrag;
+	attackDamageFrag = other.attackDamageFrag;
 	return *this;
 }
 

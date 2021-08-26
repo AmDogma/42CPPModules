@@ -13,6 +13,9 @@ public:
 	FragTrap & operator = (FragTrap const &other);
 
 	void highFivesGuys(void);
+protected:
+	unsigned int	hitPointsFrag;
+	unsigned int attackDamageFrag;
 };
 
 #endif

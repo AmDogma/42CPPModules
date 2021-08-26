@@ -20,8 +20,8 @@ public:
 	void setEnergy(unsigned int amount);
 	void setDamage(unsigned int amount);
 	std::string getName();
-	unsigned int setEnergy();
-	unsigned int setDamage();
+	unsigned int getEnergy();
+	unsigned int getDamage();
 	unsigned int getHitPoints();
 
 protected:
