@@ -3,6 +3,7 @@
 Animal::Animal() : type("") {
 	std::cout << this << "\tDefault constructor for Animal class" << std::endl;
 }
+
 Animal::Animal(std::string addType) : type(addType) {
 	std::cout << this << "\tConstructor with Type for Animal class" << std::endl;
 }
@@ -26,6 +27,7 @@ void Animal::makeSound() const {
 
 Animal & Animal::operator = (Animal const &other) {
 	this->type = other.type;
+	std::cout << "Animal operator =" << std::endl;
 	return *this;
 }
 

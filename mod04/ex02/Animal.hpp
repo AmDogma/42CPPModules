@@ -7,7 +7,7 @@ public:
 	Animal();
 	Animal(std::string addType);
 	Animal(Animal &other);
-	virtual ~Animal();
+	virtual ~Animal() = 0;
 
 	virtual void makeSound() const;
 	std::string getType () const;

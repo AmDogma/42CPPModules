@@ -1,4 +1,4 @@
-NAME = first
+NAME = second
 CC = clang++
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
