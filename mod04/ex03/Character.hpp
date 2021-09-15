@@ -1,11 +1,21 @@
 #ifndef CHARACTER_HPP
 #define CHARACTER_HPP
 #include "ICharacter.hpp"
+#include "AMateria.hpp"
 
 class Character : public ICharacter
 {
-	public:
+protected:
+	std::string name;
+	AMateria*	materia[4];
+public:
+	Character();
+	Character(std::string const & type);
+	Character(Character &other);
 	~Character() {}
+
+	Character & operator = (Character const &other);
+
 	std::string const & getName() const;
 	void equip(AMateria* m);
 	void unequip(int idx);

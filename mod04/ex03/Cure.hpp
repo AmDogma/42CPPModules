@@ -5,11 +5,14 @@
 
 class Cure : public AMateria
 {
-protected:
-	//?
 public:
+	Cure();
 	Cure(std::string const & type);
-	//?
+	Cure(Cure &other);
+	~Cure() {}
+
+	Cure & operator = (Cure const &other);
+
 	std::string const & getType() const;
 	Cure* clone() const;
 	void use(ICharacter& target);
