@@ -4,7 +4,7 @@ AMateria::AMateria() : type("") {}
 
 AMateria::AMateria(std::string const & type) : type(type) {}
 
-AMateria::AMateria(AMateria &other) {
+AMateria::AMateria(AMateria const &other) {
 	type = other.type;
 }
 

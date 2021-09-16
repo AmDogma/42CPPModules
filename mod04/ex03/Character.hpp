@@ -11,8 +11,8 @@ protected:
 public:
 	Character();
 	Character(std::string const & type);
-	Character(Character &other);
-	~Character() {}
+	Character(Character const &other);
+	~Character();
 
 	Character & operator = (Character const &other);
 

@@ -2,7 +2,6 @@
 #include "Cure.hpp"
 #include "Character.hpp"
 #include "MateriaSource.hpp"
-#include <stdio.h>
 
 int main()
 {
@@ -26,6 +25,5 @@ int main()
 	delete bob;
 	delete me;
 	delete src;
-	system("leaks forth");
 	return 0;
 }

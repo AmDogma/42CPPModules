@@ -10,8 +10,8 @@ protected:
 public:
 	AMateria();
 	AMateria(std::string const & type);
-	AMateria(AMateria &other);
-	~AMateria() {}
+	AMateria(AMateria const &other);
+	virtual ~AMateria() {}
 
 	AMateria & operator = (AMateria const &other);
 

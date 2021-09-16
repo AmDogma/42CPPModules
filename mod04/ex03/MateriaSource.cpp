@@ -5,7 +5,7 @@ MateriaSource::MateriaSource() {
 		materia[i] = NULL;
 }
 
-MateriaSource::MateriaSource(MateriaSource &other) {
+MateriaSource::MateriaSource(MateriaSource const &other) {
 	for (int i = 0; i < 4; i++)
 	{
 		if (other.materia[i])
@@ -14,6 +14,15 @@ MateriaSource::MateriaSource(MateriaSource &other) {
 			this->materia[i] = NULL;
 	}
 }
+
+MateriaSource::~MateriaSource() {
+	for (int i = 0; i < 4; i++)
+	{
+		if (materia[i])
+			delete materia[i];
+	}
+}
+
 
 MateriaSource & MateriaSource::operator = (MateriaSource const &other) {
 	for (int i = 0; i < 4; i++)

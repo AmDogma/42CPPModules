@@ -8,7 +8,7 @@ class Ice : public AMateria
 public:
 	Ice();
 	Ice(std::string const & type);
-	Ice(Ice &other);
+	Ice(Ice const &other);
 	~Ice() {}
 
 	Ice & operator = (Ice const &other);

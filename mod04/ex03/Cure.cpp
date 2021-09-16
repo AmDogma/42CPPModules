@@ -4,7 +4,7 @@ Cure::Cure() : AMateria("cure") {}
 
 Cure::Cure(std::string const & type) : AMateria(type) {}
 
-Cure::Cure(Cure &other) {
+Cure::Cure(Cure const &other) {
 	type = other.type;
 }
 
@@ -18,7 +18,7 @@ std::string const & Cure::getType() const {
 }
 
 Cure* Cure::clone() const {
-	return (new Cure(type)); // return new Cure(*this);
+	return (new Cure(*this));
 }
 
 void Cure::use(ICharacter& target) {

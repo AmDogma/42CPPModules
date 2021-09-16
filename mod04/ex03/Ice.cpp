@@ -4,7 +4,7 @@ Ice::Ice() : AMateria("ice") {}
 
 Ice::Ice(std::string const & type) : AMateria(type) {}
 
-Ice::Ice(Ice &other) {
+Ice::Ice(Ice const &other) {
 	type = other.type;
 }
 
@@ -18,7 +18,7 @@ std::string const & Ice::getType() const {
 }
 
 Ice* Ice::clone() const {
-	return new Ice(type); // return new Ice(*this);
+	return new Ice(*this);
 }
 
 void Ice::use(ICharacter& target) {

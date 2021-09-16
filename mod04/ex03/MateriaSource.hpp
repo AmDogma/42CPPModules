@@ -7,8 +7,8 @@ class MateriaSource : public IMateriaSource
 {
 public:
 	MateriaSource();
-	MateriaSource(MateriaSource &other);
-	~MateriaSource() {}
+	MateriaSource(MateriaSource const &other);
+	~MateriaSource();
 
 	MateriaSource & operator = (MateriaSource const &other);
 
