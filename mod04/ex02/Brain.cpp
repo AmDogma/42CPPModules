@@ -6,7 +6,7 @@ Brain::Brain() {
 	std::cout << this << "\tDefault constructor for Brain class" << std::endl;
 }
 
-Brain::Brain(Brain &other) {
+Brain::Brain(Brain const &other) {
 	std::cout << this << "\tCopy constructor for Brain class" << std::endl;
 	for (int i = 0; i < 100; i++)
 		ideas[i] = other.ideas[i];

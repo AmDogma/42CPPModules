@@ -6,7 +6,7 @@ class Animal {
 public:
 	Animal();
 	Animal(std::string addType);
-	Animal(Animal &other);
+	Animal(Animal const &other);
 	virtual ~Animal() = 0;
 
 	virtual void makeSound() const;

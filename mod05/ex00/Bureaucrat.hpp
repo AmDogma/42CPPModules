@@ -28,7 +28,7 @@ public:
 	std::string getName() const;
 	unsigned int getGrade() const;
 private:
-	const std::string 	_name; // const ? how to make copy method
+	const std::string 	_name;
 	unsigned int 		_grade;
 };
 

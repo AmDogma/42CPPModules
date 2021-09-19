@@ -31,7 +31,7 @@ public:
 	unsigned int getGradeSign() const;
 	unsigned int getGradeExecute() const;
 	bool getIsSigned() const;
-	void beSign(Bureaucrat &some);
+	void beSign(Bureaucrat const &some);
 private:
 	const std::string 	_name;
 	const unsigned int 	_gradeSign;

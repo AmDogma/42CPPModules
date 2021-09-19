@@ -8,7 +8,7 @@ Animal::Animal(std::string addType) : type(addType) {
 	std::cout << this << "\tConstructor with Type for Animal class" << std::endl;
 }
 
-Animal::Animal(Animal &other) {
+Animal::Animal(Animal const &other) {
 	std::cout << this << "\tCopy constructor for Animal class" << std::endl;
 	this->type = other.type;
 }

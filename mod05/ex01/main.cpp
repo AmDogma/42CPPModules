@@ -7,7 +7,7 @@ int main ()
 	Bureaucrat rookie("Rookie", 150);
 	Form	forRookie("forRookie", 150, 100);
 	Form	forPro("forPro", 1, 1);
-
+	
 	rookie.signForm(forPro);
 	try
 	{

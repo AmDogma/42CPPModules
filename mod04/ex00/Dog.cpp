@@ -1,15 +1,13 @@
 #include "Dog.hpp"
 
-Dog::Dog() : Animal() {
-	type = "Dog";
+Dog::Dog() : Animal("Dog") {
 	std::cout << this << "\tDefault constructor for Dog class" << std::endl;
 }
 Dog::Dog(std::string addType) : Animal(addType) {
-	this->type = addType;
 	std::cout << this << "\tConstructor with Type for Dog class" << std::endl;
 }
 
-Dog::Dog(Dog &other) {
+Dog::Dog(Dog const &other) {
 	std::cout << this << "\tCopy constructor for Dog class" << std::endl;
 	this->type = other.type;
 }

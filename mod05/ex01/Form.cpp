@@ -45,15 +45,13 @@ const char *Form::FormIsSigned::what() const throw() {
 	return "Form is signed!";
 }
 
-void Form::beSign(Bureaucrat &some) {
+void Form::beSign(Bureaucrat const &some) {
 	if (_gradeSign < some.getGrade())
 		throw GradeTooLowException();
 	else if (_isSigned)
 		throw FormIsSigned();
 	else
-	{
 		_isSigned = true;
-	}
 		
 }
 

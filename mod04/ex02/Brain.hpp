@@ -5,7 +5,7 @@
 class Brain {
 public:
 	Brain();
-	Brain(Brain &other);
+	Brain(Brain const &other);
 	~Brain();
 	Brain & operator = (Brain const &other);
 
