@@ -1,5 +1,9 @@
+#ifndef ALL_HPP
+#define ALL_HPP
+
 #include <iostream>
 #include <cstdlib>
+#include <limits>
 
 
 class All
@@ -8,11 +12,24 @@ public:
 
 	All();
 	All(std::string arg);
-	~All();
+	All(All const &other);
+	~All() {}
+
+	All & operator = (All const &other);
+
+	void printAll();
+	void toChar();
+	void toInt();
+	void toFloat();
+	void toDouble();
+
 	bool 	inf_p;
-	bool 	nan;
 	bool 	inf_m;
-	bool 	zero;
+	bool 	ch_t;
+	bool 	nan;
 	double	value;
-	int 	length;
+	bool 	zero;
+
 }; 
+
+#endif

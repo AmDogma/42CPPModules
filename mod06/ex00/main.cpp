@@ -1,10 +1,5 @@
 #include "All.hpp"
 
-void toChar(All all, std::string arg)
-{
-	// std::string exeption[6] = {"-inff", "+inff", "nanf", "-inf", "+inf", "nan"};
-	if (arg )
-
 int main(int ac, char **av)
 {
 	if (ac != 2)
@@ -12,6 +7,7 @@ int main(int ac, char **av)
 	else
 	{
 		All all((std::string)av[1]);
+		all.printAll();
 	}
 	return 0;
 }
